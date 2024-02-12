@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.9.22"
+    application
 }
 
 group = "ai.sahaj.gurukul"
@@ -11,6 +12,10 @@ repositories {
 
 dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test")
+}
+
+application {
+    mainClass = "com.sahaj.gurukul.MainKt"
 }
 
 tasks.test {
